@@ -11,18 +11,28 @@ def sort_array_char_count(array)
 end
 
 def swap_elements(array)
-  second_element = array[1]
-  third_element = array[2]
-  array[1] = third_element
-  array[2] = second_element
+  # my first solution
+  #   second_element = array[1]
+  #   third_element = array[2]
+  #   array[1] = third_element
+  #   array[2] = second_element
+  #   array
+
+  array[1], array[2] = array[2], array[1]
+  # if i had tried to do this on separate lines, would not have worked
+  # can assign multiple values on same line
   array
 end
 
 def swap_elements_from_to(array, index, destination_index)
-  element_x = array[index]
-  element_y = array[destination_index]
-  array[index] = element_y
-  array[destination_index] = element_x
+  # my first solution
+  #   element_x = array[index]
+  #   element_y = array[destination_index]
+  #   array[index] = element_y
+  #   array[destination_index] = element_x
+  #   array
+
+  array[index], array[destination_index] = array[destination_index], array[index]
   array
 end
 
